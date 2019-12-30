@@ -7,7 +7,7 @@ li{
 
 .header{
 	color:#fff;
-	background-color:#26d0c9;
+	background-color:midnightblue;
 	border:5px solid black;
 }
 .header-logo{
@@ -24,7 +24,7 @@ li{
 }
 
 .section-title{
-	border-bottom: 2px solid #dee7ec;
+	border-bottom: 2px solid white;
   font-size: 50px;
 	font-family: cursive;
   <--padding-bottom: 15px;
@@ -41,7 +41,7 @@ span t3{
 }
 
 .footer{
-	background-color: #2f5167;
+	background-color: gray;
 	color:#fff;
 	height:120px;
 	padding:40px;
