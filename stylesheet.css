@@ -119,10 +119,10 @@ header{
 
 .section-title{
 	border-bottom: 2px solid white;
-  font-size: 50px;
+	font-size: 50px;
 	font-family: cursive;
-  <--padding-bottom: 15px;
-  <--margin-bottom: 50px;
+	<--padding-bottom: 15px;
+	<--margin-bottom: 50px;
 }
 span t1{
 	color: green;
