@@ -1,14 +1,54 @@
+@charset "UTF-8";
+
+/* Initial */
 body{
+	margin: 0;
+	padding: 0;
+	<!-- background-color: -->
+	color: gray;
 	font-family: "Avenir Next";
+	font-size: 15px;
+	line-height: 2;
 }
+
+p,h1,h2,h3,h4,h5,h6{
+	margin-top: 0;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
 li{
 	list-style: none;
 }
 
-.header{
-	color:midnightblue;
-	background-color:midnightblue;
-	border:5px solid black;
+a{
+	color: #3583aa;
+}
+
+a:visited{
+	color: #788d98;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+/* Header */
+header{
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	color:white;
+	background-color:teal;
+	border:2px solid black;
 }
 .header-logo{
 	float:left;
@@ -18,10 +58,64 @@ li{
 .header-list li{
 	float: left;
 	padding: 33px 20px;
+	font-size: 15px;
+	color: gray;
 }
-.main{
-	padding: 100px 80px;
+.header-list li a:hover{
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 3px;
+	text-decoration:  none;
 }
+
+/* Top page */
+#index h1{
+	font-size: 100px;
+	line-height: 1;
+	color: white;
+	font-family: 'Bitter',serif;
+	margin: 50px 50px;
+}
+#index .content{
+	margin-top: 150px;
+}
+#index p{
+	font-size: 16px;
+	color: gray;
+	margin: 20px 20px;
+
+}
+.btn a{
+	text-decoration: none;
+	background-color: lightgray;
+	color: #ffffff;
+	font-size: 25px;
+	font-family: 'Bitter',serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin: 20px;
+	border-radius: 5px;
+	border: 3px solid #009cd3;
+}
+.btn a:hover{
+	text-decoration: none;
+	background-color: gray;
+	color: #009cd3;
+}
+#index footer{
+	width: 960px;
+	margin: 150px auto 0 auto;
+	text-align: center;
+}
+#index{
+	background-image: url(images/index_ttl01.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 
 .section-title{
 	border-bottom: 2px solid white;
