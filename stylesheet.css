@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+$debug: 0;
+/* If you want debug mode, change 1. */
+$test: 0;
+/* 1==complited
+   0==implementation*/
+
 /* Initial */
 body{
 	margin: 0;
@@ -30,6 +36,7 @@ li{
 
 a{
 	color: #3583aa;
+	text-decoration: none;
 }
 
 a:visited{
@@ -37,7 +44,7 @@ a:visited{
 }
 
 a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
@@ -46,26 +53,75 @@ header{
 	width: 960px;
 	height: 100px;
 	margin: 0 auto;
-	color:white;
-	background-color:teal;
-	border:2px solid black;
+	background-color: #566b8f;
 }
+
 .header-logo{
 	float:left;
-	font-size:50px;
-	padding:20px 40px;
+	margin-top: 20px;
+	font-size: 40px;
+	text-decoration: none;
 }
-.header-list li{
+.header-logo:hover{
+	text-decoration: none;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 60px;
+}
+
+.grobal-nav li{
 	float: left;
-	padding: 33px 20px;
-	font-size: 15px;
-	color: gray;
+	margin: 30px 20px;
+	font-size: 20px;
+	list-style: none;
+	font-family: 'Bitter' serif;
 }
-.header-list li a:hover{
+
+.global-nav li a {
+  color: #ffffff;
+}
+
+.grobal.nav li a:hover{
 	border-bottom: 2px solid #ffffff;
 	padding-bottom: 3px;
 	text-decoration:  none;
 }
+
+
+
+
+
+/* Footer */
+footer{
+	text-align: center;
+	color:#ffffff;
+	padding:20px 0;
+}
+
+.footer-logo{
+	color: black;
+	float:left;
+	font-size: 32px;
+}
+.footer-list{
+	float: right;
+}
+.footer-list li{
+	padding-bottom:20px;
+}
+
+
+#wrap{
+	clear: both;
+}
+
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+
 
 /* Top page */
 #index h1{
@@ -75,14 +131,17 @@ header{
 	font-family: 'Bitter',serif;
 	margin: 15% 20% 20% 15%;
 }
+
 #index .content{
 	margin-top: 150px;
 }
+
 #index p{
 	font-size: 30px;
 	color: white;
 	margin: 0% 20% 20% 10%;
 }
+
 .btn a{
 	text-decoration: none;
 	background-color: lightgray;
@@ -97,16 +156,19 @@ header{
 	border-radius: 5px;
 	border: 3px solid #009cd3;
 }
+
 .btn a:hover{
 	text-decoration: none;
 	background-color: gray;
 	color: #009cd3;
 }
+
 #index footer{
 	width: 960px;
 	margin: 150px auto 0 auto;
 	text-align: center;
 }
+
 #index{
 	background-image: url(images/index_ttl01.jpg);
 	background-repeat: no-repeat;
@@ -114,6 +176,19 @@ header{
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+/* #top{
+	background-image: url(images/header02.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: 100% auto;
+} */
+
+
+
+
+
 
 
 .section-title{
@@ -131,22 +206,4 @@ span t2{
 }
 span t3{
 	color: navy;
-}
-
-.footer{
-	background-color: gray;
-	color:#fff;
-	height:120px;
-	padding:40px;
-}
-.footer-logo{
-	color: black;
-	float:left;
-	font-size: 32px;
-}
-.footer-list{
-	float: right;
-}
-.footer-list li{
-	padding-bottom:20px;
 }
